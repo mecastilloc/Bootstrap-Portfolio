@@ -41,6 +41,9 @@ nav{
     font-size: 40px;
     height: 70px;
     padding: 0px 10px 0px 10px;
+    animation: photo 5s;
+    -webkit-animation: photo 5s;
+    
     
 }
 
@@ -51,8 +54,21 @@ nav{
 #h{
     color: #4aaaa5;
     padding: 10px;
-    
-}
+    animation: h 5s;
+    -webkit-animation: h 5s;
+    }
+
+    @-webkit-keyframes h{
+    0% {color: orange;}
+    50% {color: yellow;}
+    100% {color: #16f1f1;}
+    }
+
+    @keyframes h{
+        0% {color: orange;}
+        50% {color: yellow;}
+        100% {color: #16f1f1;}
+        }
 
 footer{
     background: #666666;
@@ -76,10 +92,12 @@ footer{
     height: 100px;
     float: left;
     margin-right: 20px;
-
+    animation: photo 5s;
+    -webkit-animation: photo 5s;
 }
 
-#conten.a{
+
+#content a{
     color: #777777;
 }
 
@@ -102,7 +120,13 @@ footer{
     text-align: center; 
 }
 
+.portimg{
+    animation: photo 2s;
+    -webkit-animation: photo 2s;
+}
 
+
+/* Style Contact */
 .btn{
     background: #4aaaa5;
     color: white;
@@ -110,3 +134,18 @@ footer{
    
 }
 
+@-webkit-keyframes photo{
+    0% {opacity: 0; }
+    25% {opacity: .25;}
+    50% { opacity: .5;}
+    75% {opacity: .75;}
+    100% {opacity: 1;}
+}
+
+@keyframes photo{
+    0% {opacity: 0; }
+    25% {opacity: .25;}
+    50% { opacity: .5;}
+    75% {opacity: .75;}
+    100% {opacity: 1;}
+}
