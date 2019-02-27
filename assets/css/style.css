@@ -1,76 +1,83 @@
-
 html {
-     /*stiky footer*/
-     height: 98%;
+    /*stiky footer*/
+    height: 98%;
+    min-width: 380px;
 }
- body{
+
+body {
     background-image: url("../../assets/images/bg.png");
     background-repeat: repeat;
-    background-color: black; 
-    font-family: Arial, Helvetica, sans-serif; 
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
     color: #777777;
     /*sticky footer*/
     height: 98%;
     display: flex;
     flex-direction: column;
-/*sticky footer*/
-    }
+    /*sticky footer*/
+}
 
-.container{
+.container {
     background-color: white;
     max-width: 780px;
 }
 
-#mainbody{
+#mainbody {
     margin-top: 10px;
-     /*sticky footer*/
-     flex: 1 0 auto;
-   
+    /*sticky footer*/
+    flex: 1 0 auto;
 }
 
-
-nav{
+nav {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: white;
-      
 }
 
-.navbar-brand{
-    
+.navbar-brand {
     background: #4aaaa5;
     font-size: 40px;
     height: 70px;
     padding: 0px 10px 0px 10px;
     animation: photo 5s;
     -webkit-animation: photo 5s;
-    
-    
 }
 
-.navbar{
+.navbar {
     padding: 0;
 }
 
-#h{
+#h {
     color: #4aaaa5;
     padding: 10px;
     animation: h 5s;
     -webkit-animation: h 5s;
+}
+
+@-webkit-keyframes h {
+    0% {
+        color: orange;
     }
-
-    @-webkit-keyframes h{
-    0% {color: orange;}
-    50% {color: yellow;}
-    100% {color: #16f1f1;}
+    50% {
+        color: yellow;
     }
+    100% {
+        color: #16f1f1;
+    }
+}
 
-    @keyframes h{
-        0% {color: orange;}
-        50% {color: yellow;}
-        100% {color: #16f1f1;}
-        }
+@keyframes h {
+    0% {
+        color: orange;
+    }
+    50% {
+        color: yellow;
+    }
+    100% {
+        color: #16f1f1;
+    }
+}
 
-footer{
+footer {
     background: #666666;
     color: white;
     height: 70px;
@@ -78,16 +85,16 @@ footer{
     padding-top: 25px;
     margin-top: 25px;
     border-top: 8px solid #4aaaa5;
-   /*sticky footer*/
-   flex-shrink: 0;
-   width:100%;
-   font-size: x-small;
-/*sticky footer*/
-} 
-
+    /*sticky footer*/
+    flex-shrink: 0;
+    width: 100%;
+    font-size: x-small;
+    /*sticky footer*/
+}
 
 /*styling About*/
-#profile{
+
+#profile {
     width: 100px;
     height: 100px;
     float: left;
@@ -96,18 +103,13 @@ footer{
     -webkit-animation: photo 5s;
 }
 
-
-#content a{
+#content a {
     color: #777777;
 }
 
-
-
-
-
 /*styling Portfolio*/
 
-.box{
+.box {
     color: white;
     background: #4aaaa5;
     font-size: 20px;
@@ -115,37 +117,62 @@ footer{
     height: 40px;
     position: relative;
     bottom: 50px;
-     /*float: left; */
     width: 300px;
-    text-align: center; 
+    text-align: center;
 }
 
-.portimg{
+.portimg {
     animation: photo 2s;
     -webkit-animation: photo 2s;
 }
 
+/* prevent same cow images overlap when in  with = 612 px */
+
+.myextraformat {
+    padding: 0 0 0 50px;
+    min-width: 305px;
+}
 
 /* Style Contact */
-.btn{
+
+.btn {
     background: #4aaaa5;
     color: white;
     margin-bottom: 10px;
-   
 }
 
-@-webkit-keyframes photo{
-    0% {opacity: 0; }
-    25% {opacity: .25;}
-    50% { opacity: .5;}
-    75% {opacity: .75;}
-    100% {opacity: 1;}
+@-webkit-keyframes photo {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-@keyframes photo{
-    0% {opacity: 0; }
-    25% {opacity: .25;}
-    50% { opacity: .5;}
-    75% {opacity: .75;}
-    100% {opacity: 1;}
+@keyframes photo {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .25;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+        opacity: 1;
+    }
 }
