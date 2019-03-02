@@ -1,6 +1,6 @@
 html {
-    /*stiky footer*/
-    height: 98%;
+    /* stiky footer
+    height: 98%; */
     min-width: 380px;
 }
 
@@ -10,7 +10,7 @@ body {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
-    /*sticky footer*/
+    /*sticky footer
     height: 98%;
     display: flex;
     flex-direction: column;
@@ -24,8 +24,9 @@ body {
 
 #mainbody {
     margin-top: 10px;
-    /*sticky footer*/
-    flex: 1 0 auto;
+    margin-bottom: 10px;
+    /*sticky footer
+    flex: 1 0 auto;*/
 }
 
 nav {
@@ -83,9 +84,9 @@ footer {
     height: 70px;
     text-align: center;
     padding-top: 25px;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     border-top: 8px solid #4aaaa5;
-    /*sticky footer*/
+    /*sticky footer
     flex-shrink: 0;
     width: 100%;
     font-size: x-small;
@@ -126,7 +127,7 @@ footer {
     -webkit-animation: photo 2s;
 }
 
-/* prevent same cow images overlap when in  with = 612 px */
+/* prevent same row images overlap when in  with = 612 px */
 
 .myextraformat {
     padding: 0 0 0 50px;
